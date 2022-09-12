@@ -1,0 +1,339 @@
+/* font awesome style  */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+/* top part of this website */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.container {
+    margin-top: 24px;
+    background-color: #161616;
+    font-family: 'Poppins', sans-serif;
+    width: 1050px;
+    height: 650px;
+    padding-left: 90px;
+    border-radius: 10px;
+}
+
+.headline {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.banner {
+    padding-top: 30px;
+}
+
+.top-part {
+    display: flex;
+
+}
+
+.headline h1 {
+    font-size: 70px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.half-width img {
+    width: 85%;
+    height: 620px;
+}
+
+.banner-text {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.link-btn {
+    text-decoration: none;
+    padding: 16px 35px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border-radius: 5px;
+
+}
+
+.link-btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.second-section {
+    display: flex;
+}
+
+.box-area {
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+
+.preview {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.preview a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+.box {
+    padding-top: 20px;
+}
+
+
+.upcoming-match {
+    margin: 15px;
+}
+
+.all-group {
+    margin: 15px;
+    margin-top: 0;
+}
+
+.blog {
+    background-color: #DD0000;
+    margin: 15px;
+    margin-top: 0px;
+}
+
+.card-details {
+    padding: 15px;
+}
+
+.card {
+    width: 280px;
+    height: 350px;
+    background-color: whitesmoke;
+    box-shadow: 10px 20px 50px whitesmoke;
+    border-radius: 10px;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.transfer-btn:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.time-comment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-upper {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.goal {
+    font-size: 40px;
+    color: white;
+}
+
+hr {
+    border: 1px solid grey;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+footer {
+    background-color: #161616;
+    width: 100%;
+
+}
+
+.contact-area,
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-area a {
+    font-size: 12px;
+    font-weight: 700;
+    color: grey;
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.social-icons a {
+    font-size: 30px;
+    color: plum;
+    text-decoration: none;
+    padding-right: 40px;
+}
+
+.social-icons a:hover {
+    cursor: pointer;
+}
+
+.footer-work {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+/* ------------------------------------------------
+------Responsiveness by using media Query 
+----------------------------------------- */
+/* >>>>>>>>>>>>>>>>for mobile phone
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+@media only screen and (max-width:688px) {
+
+    .container {
+        width: 334px;
+        height: 800px;
+        padding-left: 30px;
+        border-radius: 10px;
+    }
+
+    .headline h1 {
+        font-size: 25px;
+    }
+
+    .top-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half-width {
+        width: 90%;
+    }
+
+    .half-width img {
+        width: 250px;
+        height: 430px;
+        padding-left: 40px;
+    }
+
+    .banner {
+        padding-top: 0px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+        /* padding-bottom: 20px; */
+    }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-area {
+        margin-bottom: 50px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+    }
+
+    .contact-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    hr {
+        border: 1px solid grey;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contact-area a {
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 500;
+        color: grey;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .footer-upper {
+        text-align: center;
+        padding-top: 3px;
+    }
+
+}
+
+/* ######################
+for tablet devices
+###################### */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        margin-top: 24px;
+        width: 700px;
+        height: 650px;
+        padding-left: 50px;
+    }
+
+    .headline h1 {
+        font-size: 50px;
+    }
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-area {
+        margin-bottom: 50px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+
+}

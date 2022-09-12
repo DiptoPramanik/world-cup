@@ -1,0 +1,82 @@
+.match-day {
+    width: 250px;
+    height: 200px;
+    /* border: 1px solid red; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    box-shadow: 1px 1px 8px grey;
+    border-radius: 10px;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+
+}
+
+.text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #161616;
+}
+
+.match-details {
+    text-align: center;
+    color: grey;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.match-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px
+}
+
+.upcoming-match {
+    background-color: #DD0000;
+}
+
+.blog {
+    background-color: white;
+}
+
+/* >>>>>>>>>>>>>>for the phones>>>>>>>>>>>>>> */
+@media only screen and (max-width:688px) {
+    .second-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-area {
+        margin-bottom: 50px;
+    }
+
+    .match-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+        column-gap: 0px;
+    }
+
+}
+
+/* for the tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .second-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .match-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+}
